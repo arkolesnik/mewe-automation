@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Selenium test for Twitter" parallel="false">
+    <test name="Login and add content" preserve-order="true">
+        <classes>
+            <class name="ExampleTest"/>
+            <methods>
+                <include name="login">
+                    <parameter name="username" value="testacc494@gmail.com"/>
+                    <parameter name="password" value="Testpass123"/>
+                </include>
+                <include name="postRandomMessageWithPhoto">
+                    <parameter name="photoFileName" value="test-photo.jpg"/>
+                </include>
+                <include name="sendRandomMessageWithFilesInChat">
+                    <parameter name="photoFileName" value="test-photo.jpg"/>
+                    <parameter name="videoFileName" value="test-movie.mp4"/>
+                </include>
+            </methods>
+        </classes>
+    </test>
+</suite>
