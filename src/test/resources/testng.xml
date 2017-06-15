@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Selenium test for Twitter" parallel="false">
+<suite name="Selenium test for Mewe.com" parallel="false">
     <test name="Login and add content" preserve-order="true">
         <classes>
             <class name="ExampleTest"/>

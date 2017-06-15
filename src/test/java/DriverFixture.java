@@ -18,11 +18,10 @@ public class DriverFixture {
         ChromeOptions options = new ChromeOptions();
         DriverUtils.setOptionsForChrome(options);
         driver = new ChromeDriver(options);
-        wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver, 15);
 
         driver.get(URL);
     }
-
 
     @AfterSuite(alwaysRun = true)
     public void tearDown() {
